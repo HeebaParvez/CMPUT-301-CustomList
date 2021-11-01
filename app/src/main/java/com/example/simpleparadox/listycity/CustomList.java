@@ -32,8 +32,27 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
         return;
     }
+    public boolean hasCity(City city) {
+        if (cities.contains(city)) {
+            return true;
+        }
+        return false;
+    }
 
-    //    private CustomList list;
+//    public boolean deleteCity(City city) {
+//        if (!cities.contains(city)) {
+//            throw new IllegalArgumentException();
+//        }
+//        cities.remove(city);
+//        return true;
+//    }
+//
+//    public int countCities() {
+//        return cities.size();
+//
+//    }
+
+//    private CustomList list;
 //    @Before
 //    public void createList(){
 //        list = new CustomList(null, new ArrayList<City>());
@@ -46,6 +65,7 @@ public class CustomList extends ArrayAdapter<City> {
 //        assertEquals(list.getCount(), listSize+1);
 //    }
 //
+
     private void assertEquals(int count, int i) {
     }
 
@@ -71,4 +91,5 @@ public class CustomList extends ArrayAdapter<City> {
         return view;
 
     }
+
 }

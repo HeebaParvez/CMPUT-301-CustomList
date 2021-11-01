@@ -20,6 +20,16 @@ public class CityListTest {
         list.addCity(new City("Halifax", "NS"));
         assertEquals(list.getCount(), listSize+1);
     }
+    @Test
+    public void hasCityTest(){
+        int listSize = list.getCount();
+//        list.hasCity(new City("Halifax", "NS"));
+        assertTrue(list.hasCity(new City("Halifax", "NS")));
+    }
+
+    private void assertTrue(boolean b) {
+    }
+
 
     private void assertEquals(int count, int i) {
     }
