@@ -23,7 +23,7 @@ public class CityListTest {
     @Test
     public void hasCityTest(){
         int listSize = list.getCount();
-//        list.hasCity(new City("Halifax", "NS"));
+        list.hasCity(new City("Halifax", "NS"));
         assertTrue(list.hasCity(new City("Halifax", "NS")));
     }
 
