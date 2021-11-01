@@ -37,7 +37,7 @@ public class CityListTest {
     @Test
     public void countCityTest(){
         int listSize = list.getCount();
-//        list.getCount();
+        list.getCount();
         assertEquals(list.getCount(), listSize);
     }
 
