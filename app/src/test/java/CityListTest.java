@@ -34,6 +34,13 @@ public class CityListTest {
         assertEquals(list.getCount(), listSize-1);
     }
 
+    @Test
+    public void countCityTest(){
+        int listSize = list.getCount();
+//        list.getCount();
+        assertEquals(list.getCount(), listSize);
+    }
+
     private void assertTrue(boolean b) {
     }
 

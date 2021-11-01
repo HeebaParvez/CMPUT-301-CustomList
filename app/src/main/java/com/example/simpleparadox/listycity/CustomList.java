@@ -46,11 +46,11 @@ public class CustomList extends ArrayAdapter<City> {
         cities.remove(city);
         return true;
     }
-//
-//    public int countCities() {
-//        return cities.size();
-//
-//    }
+
+    public int countCities() {
+        return cities.size();
+
+    }
 
 //    private CustomList list;
 //    @Before
