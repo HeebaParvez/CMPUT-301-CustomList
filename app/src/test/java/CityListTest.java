@@ -27,6 +27,13 @@ public class CityListTest {
         assertTrue(list.hasCity(new City("Halifax", "NS")));
     }
 
+    @Test
+    public void deleteCityTest(){
+        int listSize = list.getCount();
+        list.deleteCity(new City("Halifax", "NS"));
+        assertEquals(list.getCount(), listSize-1);
+    }
+
     private void assertTrue(boolean b) {
     }
 
